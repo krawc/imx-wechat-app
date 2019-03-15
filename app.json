@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/equip/equip"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#57068c",
+    "navigationBarTitleText": "IMX",
+    "navigationBarTextStyle": "white"
+  }
+}

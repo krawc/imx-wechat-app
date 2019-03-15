@@ -1,0 +1,35 @@
+/* profile.wxss */
+
+.container {
+  padding-top: 10vh;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.events-header {
+  font-size: 20px;
+  font-weight: 500; 
+}
+
+.profile-events {
+  margin: 1em 0;
+
+  /* border: 1px solid #eee; */
+
+}

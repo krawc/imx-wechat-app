@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="profile-events">
+    <text class="events-header">Your bookmarked IMA events:</text>
+    <view class="bookmarked-event" wx:for="{{bookmarkedEvents}}">{{item}}</view>
+  </view>
+
+  <button type="primary" bindtap="handleQRScan">Scan QR Code</button>
+
+</view>
+
+
+  <!-- review.wxml
+<block wx:for="{{forms}}" wx:for-item="form" wx:key="objectId">
+ <text data-id="{{form.objectId}}" >
+  {{form.review}}
+ </text>
+ <text>
+  - {{form.name}}
+ </text>
+</block>
+  <!-- pages/form/form.wxml
+<form bindsubmit="bindFormSubmit">
+  <button class="photo-upload" bindtap="handleChoosePhoto">Upload Photo</button>
+  <view>
+   <textarea name="review" maxlength="-1" />
+  </view>
+  <button type="primary" form-type="submit">Send</button>
+ </form> -->
