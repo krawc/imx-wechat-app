@@ -1,0 +1,28 @@
+
+.equip {
+  padding: 1em 0.5em;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.equip-single {
+  display: flex;
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+}
+
+.equip-single:last-of-type {
+  border-bottom: 1px solid #eee;
+}
+
+.equip-single .photo {
+  flex: 0 0 20%;
+}
+
+.equip-single .photo image {
+  width: 50px;
+  height: 50px;
+}
+

@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="slider" indicator-dots="{{true}}" autoplay="{{true}}" 
+  interval="{{3000}}" duration="{{500}}">
+    <swiper-item wx:for="{{sliderImgs}}">
+      <image src="{{item}}" class="slider-img" mode="cover"/>
+    </swiper-item>
+  </swiper>
+
+  <view class="tags">
+    <button wx:for="{{newsTags}}" bindtap="bindTagBtnTap" data-tag="{{item}}" class="btn-tag">
+      {{item}}
+    </button>
+  </view>
+
+
+  <view class="news">
+    <view class="news-single" wx:for="{{news}}" wx:if="{{(item.tag === newsTag) || (newsTag == '')}}">
+      <view class="photo">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="news-single-contents">
+        <text class="news-single-title">{{item.title}}</text>
+        <text class="news-single-text">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

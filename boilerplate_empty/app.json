@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/equip/equip"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#57068c",
+    "navigationBarTitleText": "IMX",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "selectedColor": "#8900e1",
+    "color": "#7f8389",
+    "list": [
+      {
+        "pagePath": "pages/equip/equip",
+        "iconPath": "assets/icons/btn1.png",
+        "selectedIconPath": "assets/icons/btn1_active.png",
+        "text": "Equipment"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/icons/btn2.png",
+        "selectedIconPath": "assets/icons/btn2_active.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "assets/icons/btn3.png",
+        "selectedIconPath": "assets/icons/btn3_active.png",
+        "text": "Profile"
+      }
+    ]
+  }
+}

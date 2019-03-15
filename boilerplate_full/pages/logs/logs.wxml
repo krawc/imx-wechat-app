@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="equip">
+    <view wx:for="{{equip}}" class="equip-single">
+    <view class="photo">
+      <image src="{{item.img}}"></image>
+    </view>
+    {{item.title}}
+    </view>
+  </view>
+</view>

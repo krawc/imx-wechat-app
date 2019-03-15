@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="equip-search">
+    <input type="text" placeholder="Search ER..." bindinput="handleSearch"></input>
+  </view>
+  <view class="equip">
+    <view wx:for="{{searchResults}}" class="equip-single {{item.avail ? '' : 'missing'}}">
+    <view class="photo">
+      <image src="{{item.img}}"></image>
+    </view>
+    {{item.title}}
+    </view>
+  </view>
+</view>
